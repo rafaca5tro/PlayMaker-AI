@@ -14,7 +14,7 @@ export default function Home() {
     if (file) formData.append('file', file)
 
     setLoading(true)
-    const res = await fetch('https://play-maker-ai.vercel.app/', {
+    const res = await fetch('https://play-maker-ai.vercel.app/audit', {
       method: 'POST',
       body: formData,
     })
